@@ -4,7 +4,7 @@
   angular.module('LunchCheck',[])
 
     .controller('LunchCheckController',function($scope){
-
+        $scope.name = "";
         $scope.showMessage = function(name){
               var stringtosplit = name;
                var arrayofstring = stringtosplit.split(",");
