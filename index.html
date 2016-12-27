@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-
     <title>hello arvind</title>
-  </head>
+      </head>
   <body ng-app="LunchCheck">
 
     <h1>NAME CALCULATOR</h1>
@@ -17,11 +16,10 @@
             <input type="text" ng-model="name">
               <input type="button"
                      ng-click="showMessage(name);"
-                     value="Check If Too Much"
-                >
+                     value="Check If Too Much">
       </div>
       <div>
-        Total Count: {{Message}}
+        Total Count: <span ng-class="{red: Message == 'please enter the data first', green: Message == 'Enjoy'}"> {{Message}}</span>
       </div>
     </div>
   </body>
